@@ -1,6 +1,6 @@
 const container = document.querySelector("#container");
 let numberOfSqr = 32;
-let containerSize = 400;
+let containerSize = 500;
 let sqrSize = containerSize / numberOfSqr; // Equation to make divs proportioned to container
 let mouseDown = false; 
 
@@ -51,10 +51,8 @@ function updateGridVal() {
     numberOfSqr = slider.value;
     sqrSize = containerSize / numberOfSqr;
     initializeGrid();
-    sliderOutput.textContent = `${slider.value} x ${slider.value}`;
+    sliderOutput.textContent = `${slider.value} x ${slider.value}`; // ask why it wasnt working when place at the start
   }
-
-  // Updates grid 
 }
 
 function deleteGridVal() {
@@ -65,3 +63,5 @@ function deleteGridVal() {
 }
 
 initializeGrid();
+
+

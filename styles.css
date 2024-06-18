@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background-color: beige;
+  background-color: #ededed;
 }
 
 #title {
@@ -12,16 +12,25 @@ body {
   color: #333;
 }
 
+main {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  max-width: 1100px;
+  margin: auto;
+  gap: 100px;  
+}
+
 /* Container */
 
 #container {
   display: flex;
   flex-wrap: wrap;
-  margin:auto;
+  margin: auto 0;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   padding: 0px;
   box-shadow: 0 0 4px;
 }
@@ -31,6 +40,55 @@ body {
   padding: 0px;
 }
 
+/* Slider */
+
+.options {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  width: 200px;
+  height: auto;
+}
+
+button {
+  padding: 20px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white;
+  outline: none;
+  opacity: 1;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; 
+  background: #333;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.sliderOutput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
