@@ -24,7 +24,6 @@ function initializeGrid() {
     div.textContent = "";
     div.style.height = `${sqrSize}px`;
     div.style.width = `${sqrSize}px`;
-    div.style.border = "1px solid darkgray"; // Added this to see the grid lines (temporary)
 
     // Grid Color
     div.addEventListener("mouseover", () => handleColorChange(div));
