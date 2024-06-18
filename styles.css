@@ -52,9 +52,17 @@ main {
 }
 
 button {
+  font-size: 15px; 
+  font-weight: bold;
   padding: 20px;
   margin: 5px;
   border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+  padding: 25px
 }
 
 .slider {
@@ -97,7 +105,7 @@ button {
 #footerContainer {
   display: flex;
   flex-direction: column;
-  min-height: 25vh;
+  min-height: 23vh;
 }
 
 footer {
