@@ -62,6 +62,14 @@ function deleteGridVal() {
   }
 }
 
+
+const clearBtn = document.querySelector("#clear");
+clearBtn.addEventListener("click", () => {
+  deleteGridVal();
+  initializeGrid();
+})
+
+
 initializeGrid();
 
 
