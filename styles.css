@@ -1,7 +1,8 @@
 body {
+  height: 100%;
   margin: 0px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background-color: #f5f5dc;
+  background-color: white;
 }
 
 #title {
@@ -103,16 +104,10 @@ button:hover {
 
 
 /* Footer */
-#footerContainer {
-  display: flex;
-  flex-direction: column;
-  min-height: 25vh;
-}
-
 footer {
-  font-size: 20px;
-  background-color: #dedec1;
-  padding: 20px;
-  margin-top: auto;
+  position: fixed;
   text-align: center;
+  font-size: 20px;
+  bottom: 0;
+  width: 100%;
 }
